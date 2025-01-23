@@ -1,9 +1,18 @@
-module.exports.handler = async (event) => {
+// exports.sayHello = async (event) => {
+//   return {
+//     statusCode: 200,
+//     headers: {
+//       "Content-Type": "application/josn",
+//     },
+//     body: JSON.stringify({ message: "Hello From Serverless" }),
+//   };
+// };
+
+exports.sayHello = async (event) => {
   return {
     statusCode: 200,
-    headers: {
-      "Content-Type": "application/josn",
-    },
-    body: JSON.stringify({ message: "Hello From Serverless" }),
+    body: JSON.stringify({
+      message: "Hello From Serverless",
+    }),
   };
 };
